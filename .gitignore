@@ -1,0 +1,184 @@
+# ============================================
+# DO NOT COMMIT sensitive data to public GitHub
+# PEMs, keys, passwords, tokens, logs, credentials
+# ============================================
+
+# Terraform files
+.terraform/
+.terraform.lock.hcl
+terraform.tfstate
+terraform.tfstate.backup
+terraform.tfstate.*
+*.tfplan
+*.tfplan.*
+tfplan
+tfplan-*
+
+# Override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Exclude .tfvars files that might contain sensitive data (but keep terraform.tfvars as template)
+# *.tfvars
+# *.tfvars.json
+terraform.tfvars.backup
+*.tfvars.local
+
+# Ignore CLI configuration files
+.terraformrc
+terraform.rc
+
+# ============================================
+# SECURITY: PEM, Keys, Certificates
+# ============================================
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+*.der
+*.jks
+*.keyring
+id_rsa
+id_rsa.pub
+id_ed25519
+id_ed25519.pub
+*.ppk
+ssh_keys/
+.ssh/
+private_keys/
+*.pem.bak
+
+# ============================================
+# SECURITY: Passwords, Tokens, API Keys
+# ============================================
+.github_token
+.github_token.*
+*.secret
+*.secrets
+*_secret*
+*_secrets*
+secrets.json
+secrets.yaml
+secrets.yml
+.secrets
+api_keys.txt
+api-keys.txt
+*.apikey
+*.token
+tokens/
+passwords.txt
+password.txt
+*.password
+credentials.json
+credentials.yaml
+credentials.yml
+auth.json
+auth.yaml
+auth.yml
+*.auth
+.netrc
+*.keychain
+
+# ============================================
+# SECURITY: Environment & Config with Secrets
+# ============================================
+.env
+.env.local
+.env.*.local
+.env.production
+.env.development
+.env.test
+*.env
+.venv/
+venv/
+ENV/
+env.bak
+
+# ============================================
+# SECURITY: Cloud & Provider Credentials
+# ============================================
+.aws/
+aws-credentials
+aws-credentials.json
+.aws/credentials
+.aws/config
+gcp-*.json
+azure-*.json
+*.service-account.json
+service-account-*.json
+.vault/
+*.vault
+
+# ============================================
+# SECURITY: Database & App Credentials
+# ============================================
+db_credentials.*
+database.*.json
+*.db.password
+config.local.*
+config.production.*
+config.*.local
+settings.local.*
+*.local.json
+*.local.yaml
+*.local.yml
+.sentryclirc
+
+# ============================================
+# SECURITY: Logs (can contain secrets, PII)
+# ============================================
+*.log
+logs/
+*.log.*
+crash.log
+crash.*.log
+streamlit.log
+*.log.bak
+debug.log
+error.log
+access.log
+
+# ============================================
+# SECURITY: Backups & Temp (may contain secrets)
+# ============================================
+*.bak
+*.backup
+*.old
+*_backup
+*_old
+*.tmp
+*.temp
+tmp/
+temp/
+
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# Build / runtime (non-secret)
+node_modules/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+

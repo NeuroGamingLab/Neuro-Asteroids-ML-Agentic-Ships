@@ -1,0 +1,26 @@
+# Python Desktop Application Dependencies
+# Full Python conversion of Asteroids game
+
+# Game Engine
+pygame>=2.5.0
+numpy>=1.24.0
+
+# Machine Learning (for MARL system)
+tensorflow>=2.13.0
+# OR
+# torch>=2.0.0
+# torchvision>=0.15.0
+
+# GUI (optional - for advanced controls)
+# PyQt6>=6.5.0
+# OR
+# tkinter (built-in with Python)
+
+# 3D Rendering (optional - for 3D mode)
+# panda3d>=1.10.0
+
+# Audio (mixer is included with pygame)
+
+# Utilities
+python-dotenv>=1.0.0
+
