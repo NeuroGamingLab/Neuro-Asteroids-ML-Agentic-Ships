@@ -36,6 +36,17 @@ Then push as usual (e.g. `git push origin main`). If you use HTTPS and the remot
 
 **Never commit the token or any file containing it.**
 
+### GitHub Pages
+
+A project landing page (similar to [Neuro Gaming Lab](https://neurogaminglab.github.io/Neuro-Gaming-Lab/)) is in the `docs/` folder. To publish it:
+
+1. Push the repo (including the `docs/` folder) to GitHub.
+2. In the repo: **Settings → Pages**.
+3. Under **Build and deployment**, set **Source** to **Deploy from a branch**.
+4. Choose branch (e.g. `main`) and folder **`/docs`**, then Save.
+
+The site will be available at `https://<org>.github.io/<repo-name>/` (e.g. `https://neurogaminglab.github.io/neuro-asteroids-ml-ships/`).
+
 ## How to Observe Agentic ML Ships in Action
 
 1. **Launch the game** using the commands above or the deployed link
