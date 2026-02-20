@@ -1,0 +1,28 @@
+# Virtual env and caches
+asteroids3/.venv/
+**/__pycache__/
+**/.pytest_cache/
+*.pyc
+.python-version
+
+# Git and IDE
+.git/
+.gitignore
+.cursor/
+*.md
+!asteroids3/*.md
+
+# Pygame (removed from this image)
+asteroids3/game_pygame.py
+asteroids3/menu_pygame.py
+asteroids3/run_pygame.py
+asteroids3/requirements_pygame.txt
+asteroids3/README_PYGAME.md
+
+# Docs and scripts not needed in container
+docs/
+run.sh
+run_streamlit.sh
+.env
+.env.*
+*.pem

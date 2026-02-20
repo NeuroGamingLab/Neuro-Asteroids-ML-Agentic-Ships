@@ -1,6 +1,6 @@
 # ML Driven Asteroid Ships
 
-A classic Asteroids arcade game with **Agentic ML**–driven AI ships. Implemented in three ways: **Streamlit** (web, embeds HTML5/JS game), **standalone HTML5** (browser), and **Pygame** (desktop).
+A classic Asteroids arcade game with **Agentic ML**–driven AI ships. **Streamlit** web app (embeds HTML5/JS game); also runnable as **standalone HTML5** in the browser or as a **Docker** container.
 
 ## Objective
 
@@ -11,10 +11,10 @@ This game demonstrates **Agentic ML in Action** through intelligent AI-controlle
 | Version | Command | Notes |
 |--------|--------|--------|
 | **Streamlit (web)** | `./run_streamlit.sh` | Opens in browser at http://localhost:8501 |
-| **Pygame (desktop)** | `./run.sh` | Native window; run from project root |
+| **Docker** | `docker build -t asteroids-streamlit . && docker run -p 8501:8501 asteroids-streamlit` | Containerized; app at http://localhost:8501 |
 | **Online** | [Play on AWS](http://ec2-3-97-65-90.ca-central-1.compute.amazonaws.com:8501) | Deployed Streamlit instance |
 
-From project root, ensure scripts are executable (`chmod +x run_streamlit.sh run.sh` if needed). Streamlit uses the same `asteroids3/.venv` and installs Streamlit on first run if missing.
+From project root, ensure the script is executable (`chmod +x run_streamlit.sh` if needed). Streamlit uses `asteroids3/.venv` and installs Streamlit on first run if missing.
 
 ### Pushing to GitHub (neuro-asteroids-ml-ships)
 
@@ -100,7 +100,7 @@ The game is terraformed on AWS and ready to play. Access the live version to obs
 
 ## Controls
 
-*(Below: Streamlit / HTML5 version. For Pygame desktop controls see [asteroids3/README_PYGAME.md](asteroids3/README_PYGAME.md).)*
+*(Streamlit / HTML5 version.)*
 
 - **Arrow Keys**: 
   - ↑ Forward thrust

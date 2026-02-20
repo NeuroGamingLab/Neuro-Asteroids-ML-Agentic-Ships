@@ -29,7 +29,7 @@ if [[ ! -d "$GAME_DIR" ]]; then
 fi
 if [[ ! -f "$VENV_ACTIVATE" ]]; then
   echo "Error: Virtual environment not found. Create it with:" >&2
-  echo "  cd $GAME_DIR && python3 -m venv .venv && .venv/bin/pip install -r requirements_pygame.txt" >&2
+  echo "  cd $GAME_DIR && python3 -m venv .venv && .venv/bin/pip install -r requirements.txt" >&2
   exit 1
 fi
 if [[ ! -f "$STREAMLIT_APP" ]]; then
